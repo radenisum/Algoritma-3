@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+double panjang; 
+double lebar;
+double jari_jari;
+double luas_segiempat;
+double set_lingkaran;
+double luas_total; 
+
+cout<<" Masukkan nilai panjang : ";
+cin>> panjang;
+cout<<" Masukkan nilai Lebar : ";
+cin>> lebar;
+cout<<" Masukkan nilai jari-jari : ";
+cin>> jari_jari;
+
+luas_segiempat = panjang*lebar;
+set_lingkaran=(3.14*jari_jari*jari_jari)/2;
+luas_total=luas_segiempat+set_lingkaran;
+
+cout<<"Luas Setengah Lingkaran = "<<set_lingkaran<<endl;
+cout<<"Luas Segiempat          = "<<luas_segiempat<<endl;
+cout<<"Luas Total              = "<<luas_total<<endl;
+
+system ("pause");
+
+}
+
