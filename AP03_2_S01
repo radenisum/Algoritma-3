@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main ()
+{
+	string nama_mahasiswa;
+	int data_kehadiran;
+	double nilai_uts, nilai_uas, nilai_tugas, nilai_tesharian, avg;
+
+	cout << "Nama Mahasiswa  :";
+	getline (cin,nama_mahasiswa);
+	cout << "Data Kehadiran  :";
+	cin >> data_kehadiran;
+	cout << "Nilai UTS  :";
+	cin >> nilai_uts;
+	cout << "Nilai UAS  :";
+	cin >> nilai_uas;
+	cout << "Nilai Tugas  :";
+	cin >> nilai_tugas;
+	cout << " Nilai Tes Harian  :";
+	cin >> nilai_tesharian;
+	avg = 0.25*nilai_uts+0.20*nilai_tugas+0.15*nilai_tesharian+0.30*nilai_uas+0.10*data_kehadiran;
+
+	cout << "Rata-Rata Nilai Yang di dapat :  " <<endl;
+	cout << "Nama  :"<<nama_mahasiswa<<endl;
+	cout << "Nilai  :" <<avg<<endl;
+	system("pause");
+
+}
